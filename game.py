@@ -2,6 +2,7 @@ import random
 
 from consts import *
 
+
 class Game(object):
     def __init__(self, length=GAME_LENGTH):
         self.length = length
@@ -33,7 +34,7 @@ class Game(object):
             if self.initial_state[i] == guess[i]:
                 black += 1
             elif guess[i] in self.initial_state:
-                    white += 1
+                white += 1
 
         print('black: {} , white: {}'.format(black, white))
 
@@ -64,6 +65,7 @@ class Game(object):
     def start():
         for i in range(MAX_TURNS):
             game.turn()
+
 
 game = Game()
 game.start()
