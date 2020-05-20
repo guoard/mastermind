@@ -11,3 +11,6 @@ MIN_COLOR = min(COLORS.keys())
 MAX_COLOR = max(COLORS.keys())
 
 MAX_TURNS = 1
+
+WIN_MESSAGE = "you won!"
+LOSE_MESSAGE= "you lost! and initial state was {}:"

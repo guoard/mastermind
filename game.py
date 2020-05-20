@@ -45,10 +45,10 @@ class Game(object):
 
     def check_state(self, black):
         if self.check_win(black):
-            print("you won!")
+            print(WIN_MESSAGE)
             self.end()
         elif self.check_lose():
-            print("you lost! and initial state was {}:".format(self.to_str()))
+            print(LOSE_MESSAGE.format(self.to_str()))
             self.end()
 
     def check_win(self, black):
@@ -60,7 +60,9 @@ class Game(object):
     def end(self):
         self.is_ended = True
 
+    def start(self):
+        for i in range(MAX_TURNS):
+            game.turn()
 
 game = Game()
-for i in range(MAX_TURNS):
-    game.turn()
+game.start()
