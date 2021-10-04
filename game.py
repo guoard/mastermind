@@ -67,4 +67,5 @@ class Game(object):
 
 
 game = Game()
+
 game.start()
