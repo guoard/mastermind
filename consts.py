@@ -1,4 +1,5 @@
 GAME_LENGTH = 4
+
 COLORS = {
     1: 'red',
     2: 'blue',
