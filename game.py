@@ -2,7 +2,6 @@ import random
 
 from consts import *
 
-
 class Game(object):
     def __init__(self, length=GAME_LENGTH):
         self.length = length
